@@ -1,0 +1,230 @@
+@import url(reset.css);
+
+@font-face {
+    font-family: vazirNormal;
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir.woff2') format('woff2'), url('../fonts/vazir.woff') format('woff'), url('../fonts/vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: vazirBold;
+    src: url('../fonts/vazir-bold.eot');
+    src: url('../fonts/vazir-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/vazir-bold.woff2') format('woff2'), url('../fonts/vazir-bold.woff') format('woff'), url('../fonts/vazir-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-display: swap;
+}
+body, input, button {
+    font-family: vazirNormal;
+}
+body{
+    direction: rtl;
+    background-color: #ffe69a25;
+}
+.contaner{
+   width: 1200px;
+   margin: auto;
+}
+
+/********HEADER********/
+
+header{
+    background-color: #92B4EC;
+    height: 400px;
+    padding-top: 40px;
+    
+}
+header .contaner{
+    display: flex;
+    justify-content: space-between;
+    
+}
+header .textheader {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+header h1{
+    font-size: 30px;
+    line-height: 100px;
+    font-family: vazirBold;
+}
+header button{
+    width: 150px;
+    height: 35px;
+    position: relative;
+    top:30px;
+    right: 400px;
+    background-color:#FFD24C;
+    border: none;
+    border-radius: 3px;
+    font-family: vazirBold;
+}
+header button:hover{
+    background-color:#FFE69A;
+}
+.imgheader img{
+    width: 300px;
+    display: flex;
+    align-self: centers;
+}
+
+
+/*******products*******/
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.candles{
+    border: 1px #FFD24C solid;
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 430px;
+    border-radius: 3px;
+}
+
+.candlesimg img{
+    width: 100%;
+    
+}
+.product-title{
+   font-family: vazirBold;
+   color: #3878df;
+   padding: 10px;
+}
+.product-instock{
+    color: rgb(230, 99, 99);
+    line-height: 45px;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.product-data{
+    display: flex;
+    justify-content: space-between;
+   
+   height: 40px;
+   align-items: center;
+   border-top: 1px solid #FFD24C;
+    
+  
+}
+.add-to-cart{
+    color: #423714;
+    cursor: pointer;
+}
+
+
+
+/*******Cart********/
+.titlecart2{
+    width: 300px;
+    position: fixed;
+    left: 20px;
+    bottom: 0px;
+    height: 40px;
+    background-color: #e9bd38;
+    font-family: vazirBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #112b58c4;
+    cursor: pointer;
+}
+
+.cart{
+    display: none;
+    width: 300px;
+    background-color: #FFE69A;
+    height: 400px;
+    border-radius: 4px;
+    position: fixed;
+    left: 20px;
+    bottom: 0px;
+}
+.titlecart{
+    height: 40px;
+    background-color: #e9bd38;
+    font-family: vazirBold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #112b58c4;
+    cursor: pointer;
+}
+.itemcart{
+    height:320px;
+}
+.totalcart{
+    height: 40px;
+    background-color: #e9bd38;
+    color: #112b58;
+}
+
+
+
+.itemcart li{
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+.itemcart .unic{
+    display: flex;
+    width: 66px;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemcart .pname{
+    color: #141542;
+    cursor: pointer;
+}
+
+ .pname:hover{
+    background-color: #7fa2db;
+    transition: 0.25s;
+    border-radius: 40px;
+    
+}
+
+.unic .plus{
+    
+    background-color: rgb(110, 168, 99);
+    color: #e6d8b1;
+    padding: 2px;
+    border-radius: 35px;
+    cursor: pointer;
+}
+.unic .minus{
+    background-color: rgba(233, 126, 99, 0.904);
+    color: #e6d8b1;
+    padding: 2px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: 0.25s;
+    
+}
+
+
+
+
+/**Footer**/
+
+footer {
+    height: 80px;
+    background-color: #92B4EC;
+}
+footer .contaner{
+    height: 80px;
+   align-items: center;
+    display: flex;
+    justify-content: center;
+}
